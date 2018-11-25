@@ -48,6 +48,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
+            source config.env
             pytest -v
 
       - store_artifacts:
